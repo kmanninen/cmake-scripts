@@ -20,7 +20,7 @@ set(BDIST_WHEEL_IN ${CMAKE_CURRENT_LIST_DIR}/bdist_wheel.in)
 set(SDIST_IN ${CMAKE_CURRENT_LIST_DIR}/sdist.in)
 
 if (PYTHON_CROSS_PLATFORM_NAME)
-    set(BDIST_WHEEL_OPTIONS "--plat-name ${PYTHON_CROSS_PLATFORM_NAME}")
+    set(BDIST_WHEEL_OPTIONS "-p ${PYTHON_CROSS_PLATFORM_NAME}")
 endif()
 
 # Replace the specified list of source directories by target directory in files
